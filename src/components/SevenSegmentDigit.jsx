@@ -1,4 +1,5 @@
 import '../styles/SevenSegmentDigit.css'
+import '../styles/theme.css'
 
 const SEGMENTS = [
   // a, b, c, d, e, f, g
@@ -14,9 +15,8 @@ const SEGMENTS = [
   [1,1,1,1,0,1,1], // 9
 ]
 
-export default function SevenSegmentDigit({ digit, color = '#CAD2C5', offColor = '#001D3D', size = 112, style = {} }) {
+export default function SevenSegmentDigit({ digit, color = '#FFFFFF', offColor = '#000000', size = 112, style = {} }) {
   const seg = SEGMENTS[digit] || [0,0,0,0,0,0,0]
-  // Base size matches the CSS: width 64px, height 112px
   const baseWidth = 64
   const baseHeight = 112
   const scale = size / baseHeight

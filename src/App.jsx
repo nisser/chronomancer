@@ -1,10 +1,19 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import './styles/App.css'
 import Clock from './components/Clock'
 
 function App() {
-  const bgColor = "#001D3D" // <--- Set your background color here
-  const segmentColor = "#979dac" // <--- Set your color here
+  // Get theme colors from CSS variables
+  const themeColors = useMemo(() => {
+    const styles = getComputedStyle(document.documentElement)
+    return {
+      bgColor: styles.getPropertyValue('--background-color').trim(),
+      primColor: styles.getPropertyValue('--primary-color').trim(),
+      secoColor: styles.getPropertyValue('--secondary-color').trim(),
+      textColor: styles.getPropertyValue('--text-color').trim()
+    }
+  }, [])
+
   const [time, setTime] = useState(new Date())
 
   useEffect(() => {
@@ -23,10 +32,10 @@ function App() {
       <div
         className="clock-box"
         style={{
-          background: bgColor,
-          borderRadius: '18px',
-          padding: '2.5rem 2.5rem',
-          boxShadow: '0 4px 32px #0004',
+          background: themeColors.bgColor,
+          borderRadius: '20px',
+          //padding: '2.5rem 2.5rem',
+          boxShadow: '0 4px 32px #000000',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -36,15 +45,19 @@ function App() {
           hours={time.getHours()}
           minutes={time.getMinutes()}
           seconds={time.getSeconds()}
-          segmentColor={segmentColor}
+          onColor={themeColors.primColor}
+          offColor={themeColors.secoColor}
+          size={80}
+          colonGap={26}
+          colonStyle={{ marginTop: -28 }}
         />
       </div>
       <div
         style={{
-          color: '#FDFFFC',
-          marginTop: '2rem',
-          fontFamily: "'Londrina Shadow', monospace",
-          fontSize: '1.5rem',
+          color: themeColors.textColor,
+          marginTop: '32px',
+          fontFamily: "'Consolas', monospace",
+          fontSize: '28px',
           userSelect: 'none'
         }}
       >
