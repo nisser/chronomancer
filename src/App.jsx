@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from 'react'
 import './styles/App.css'
 import Clock from './components/Clock'
+import SevenSegmentDigit from './components/SevenSegmentDigit'
 
 function App() {
   // Get theme colors from CSS variables
@@ -34,7 +35,7 @@ function App() {
         style={{
           background: themeColors.bgColor,
           borderRadius: '20px',
-          //padding: '2.5rem 2.5rem',
+          padding: '10px 10px',
           boxShadow: '0 4px 32px #000000',
           display: 'flex',
           flexDirection: 'column',
@@ -52,6 +53,15 @@ function App() {
           colonStyle={{ marginTop: -28 }}
         />
       </div>
+
+      <SevenSegmentDigit
+        digit={Math.floor(dayPercent / 10)}
+        color={themeColors.primColor}
+        offColor={themeColors.secoColor}
+        size={100}
+        style={{ marginTop: '32px' }}
+      />
+
       <div
         style={{
           color: themeColors.textColor,

@@ -5,16 +5,22 @@
   margin: 0 0px;
   display: inline-block;
 }
-.seg {
+/* .seg {
   position: absolute;
   border-radius: 3px;
   transition: 0.15s;
 box-shadow: 0 0 6px #000000;
+} */
+.seg {
+  position: absolute;
+  border-radius: 0px;
+  transition: 0.15s;
+box-shadow: 0 0 0px #000000;
 }
-.a { top: 0; left: 12px; width: 40px; height: 12px; }
-.b { top: 12px; right: 0; width: 12px; height: 40px; }
-.c { bottom: 8px; right: 0; width: 12px; height: 40px; }
-.d { bottom: -4px; left: 12px; width: 40px; height: 12px; }
-.e { bottom: 8px; left: 0; width: 12px; height: 40px; }
-.f { top: 12px; left: 0; width: 12px; height: 40px; }
-.g { top: 52px; left: 12px; width: 40px; height: 12px; }
+.a { top: 0; left: 6px; width: 20px; height: 6px; }
+.b { top: 6px; right: 32px; width: 6px; height: 20px; }
+.c { bottom: 10px; right: 0; width: 6px; height: 20px; }
+.d { bottom: -2px; left: 6px; width: 20px; height: 6px; }
+.e { bottom: 8px; left: 0; width: 6px; height: 20px; }
+.f { top: 6px; left: 0; width: 6px; height: 20px; }
+.g { top: 26px; left: 6px; width: 20px; height: 6px; }
