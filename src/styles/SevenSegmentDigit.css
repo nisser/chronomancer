@@ -1,0 +1,20 @@
+.seven-segment-digit {
+  position: relative;
+  width: 64px;
+  height: 112px;
+  margin: 0 0px;
+  display: inline-block;
+}
+.seg {
+  position: absolute;
+  border-radius: 3px;
+  transition: 0.15s;
+box-shadow: 0 0 6px #000000;
+}
+.a { top: 0; left: 12px; width: 40px; height: 12px; }
+.b { top: 12px; right: 0; width: 12px; height: 40px; }
+.c { bottom: 8px; right: 0; width: 12px; height: 40px; }
+.d { bottom: -4px; left: 12px; width: 40px; height: 12px; }
+.e { bottom: 8px; left: 0; width: 12px; height: 40px; }
+.f { top: 12px; left: 0; width: 12px; height: 40px; }
+.g { top: 52px; left: 12px; width: 40px; height: 12px; }
