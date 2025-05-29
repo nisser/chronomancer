@@ -10,7 +10,6 @@ function App() {
     return {
       bgColor: styles.getPropertyValue('--background-color').trim(),
       primColor: styles.getPropertyValue('--primary-color').trim(),
-      secoColor: styles.getPropertyValue('--secondary-color').trim(),
       textColor: styles.getPropertyValue('--text-color').trim()
     }
   }, [])
@@ -35,8 +34,8 @@ function App() {
         style={{
           background: themeColors.bgColor,
           borderRadius: '20px',
-          padding: '10px 10px',
-          boxShadow: '0 4px 32px #000000',
+          padding: '40px 40px',
+          boxShadow: '0px 0px 20px 0px #000000 inset',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -47,22 +46,13 @@ function App() {
           minutes={time.getMinutes()}
           seconds={time.getSeconds()}
           onColor={themeColors.primColor}
-          offColor={themeColors.secoColor}
+          offColor={themeColors.bgColor}
           size={80}
           colonGap={26}
-          colonStyle={{ marginTop: -28 }}
+          colonStyle={{ marginTop: 0 }}
         />
       </div>
-
-      <SevenSegmentDigit
-        digit={Math.floor(dayPercent / 10)}
-        color={themeColors.primColor}
-        offColor={themeColors.secoColor}
-        size={100}
-        style={{ marginTop: '32px' }}
-      />
-
-      <div
+      {/* <div
         style={{
           color: themeColors.textColor,
           marginTop: '32px',
@@ -72,7 +62,7 @@ function App() {
         }}
       >
         The day is {dayPercent}% completed
-      </div>
+      </div> */}
     </div>
   )
 }

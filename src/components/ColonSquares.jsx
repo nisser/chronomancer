@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/ColonSquares.css'
 
-export default function ColonSquares({ color = '#000000', size = 18, gap = 10, style = {} }) {
+export default function ColonSquares({ color = '#000000', size = 12, gap = 12, style = {} }) {
   const squareStyle = {
     width: size,
     height: size,

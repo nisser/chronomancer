@@ -15,19 +15,16 @@ const SEGMENTS = [
   [1,1,1,1,0,1,1], // 9
 ]
 
-export default function SevenSegmentDigit({ digit, color = '#FFFFFF', offColor = '#000000', size = 80, style = {} }) {
+export default function SevenSegmentDigit({ digit, color = '#FFFFFF', offColor = '#000000', style = {} }) {
   const seg = SEGMENTS[digit] || [0,0,0,0,0,0,0]
   const baseWidth = 64
-  const baseHeight = 80
-  const scale = size / baseHeight
+  const baseHeight = 116
   return (
     <div
       className="seven-segment-digit"
       style={{
         width: baseWidth,
         height: baseHeight,
-        transform: `scale(${scale})`,
-        transformOrigin: 'top left',
         display: 'inline-block',
         ...style // <-- Allow custom styles from parent
       }}
