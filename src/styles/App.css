@@ -16,3 +16,15 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
+.drawer.drawer-top {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+.drawer.drawer-top.open {
+  max-height: 0px;
+}
