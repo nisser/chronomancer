@@ -15,16 +15,16 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.drawer.drawer-top {
-  width: 100%;
-  max-height: 200px;
-  overflow: hidden;
-  background: var(--background-color);
-  transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1);
-}
-
-.drawer.drawer-top.open {
-  max-height: 0px;
+.mask-half {
+  mask-image: linear-gradient(white, white);
+  mask-size: 400px 400px;
+  mask-repeat: no-repeat;
+  mask-position: center bottom;
+  -webkit-mask-image: linear-gradient(white, white);
+  -webkit-mask-size: 400px 400px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center bottom;
 }

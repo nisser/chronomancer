@@ -1,6 +1,9 @@
 import { useEffect, useState, useMemo } from 'react'
 import './styles/App.css'
 import Clock from './components/Clock'
+import WobblyClock from './components/WobblyClock'
+import Drawer from './components/Drawer'
+import { s } from 'framer-motion/client'
 
 function App() {
   // Get theme colors from CSS variables
@@ -14,7 +17,7 @@ function App() {
   }, [])
 
   const [time, setTime] = useState(new Date())
-  const [drawerOpen, setDrawerOpen] = useState(false)
+  const [drawerOpen, setDrawerOpen] = useState(true)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -29,28 +32,40 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      <button
+
+      <Drawer open={drawerOpen} setOpen={setDrawerOpen} >
+        <button
           style={{
-            margin: '0px 0',
             background: themeColors.bgColor,
-            color: themeColors.bgColor,
+            cursor: 'pointer',
             border: 'none',
-            borderRadius: '0px',
+            zIndex: 3,
+            position: 'absolute',
+            marginTop: '-30px',
+            borderRadius: '5px',
             padding: '0px 0px',
-            cursor: 'pointer'
           }}
           onClick={() => setDrawerOpen(open => !open)}
         >
           <img src="src/assets/icon_drawer.png" alt="null" />
         </button>
-        <div className={`drawer drawer-top${drawerOpen ? ' open' : ''}`} 
-        style={{ width: '400px', height: '250px',
-          borderRadius: '250px 250px 0px 0px',
-          boxShadow: '0px 0px 20px 0px #000000 inset',}}>
-          <div style={{ padding: '0px', color: themeColors.textColor, alignItems: 'center', textAlign: 'center', width: '100%', height: '100%' }}>
-            This is the drawer content!
-          </div>
+        <div
+          className="mask-half"
+          style={{
+            width: 400,
+            height: 200,
+            overflow: 'visible',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            position: 'relative',
+            zIndex: 3,
+          }}
+        >
+          <WobblyClock targetAngle={dayPercent * 3.6} />
         </div>
+      </Drawer>
+
       <div
         className="clock-box"
         style={{
@@ -60,9 +75,11 @@ function App() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          zIndex: 2,
+          position: 'relative',
         }}
       >
-        <div style={{ padding: '40px 40px' }}>
+        <div style={{ padding: '50px 50px' }}>
           <Clock
             hours={time.getHours()}
             minutes={time.getMinutes()}
@@ -75,6 +92,22 @@ function App() {
           />
         </div>
       </div>
+      <button
+        style={{
+          margin: '0px 0px',
+          background: themeColors.bgColor,
+          color: themeColors.bgColor,
+          border: 'none',
+          borderRadius: '0px',
+          padding: '0px 0px',
+          cursor: 'pointer',
+          zIndex: 5,
+          position: 'relative',
+        }}
+        onClick={() => setDrawerOpen(open => !open)}
+      >
+        <img src="src/assets/icon_drawer.png" alt="null" />
+      </button>
     </div>
   )
 }
