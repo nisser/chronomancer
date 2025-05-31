@@ -3,7 +3,6 @@ import './styles/App.css'
 import Clock from './components/Clock'
 import WobblyClock from './components/WobblyClock'
 import Drawer from './components/Drawer'
-import { s } from 'framer-motion/client'
 
 function App() {
   // Get theme colors from CSS variables
@@ -18,6 +17,7 @@ function App() {
 
   const [time, setTime] = useState(new Date())
   const [drawerOpen, setDrawerOpen] = useState(true)
+  const [wobbleTrigger, setWobbleTrigger] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,11 +30,20 @@ function App() {
   const secondsSinceMidnight = time.getHours() * 3600 + time.getMinutes() * 60 + time.getSeconds()
   const dayPercent = ((secondsSinceMidnight / 86400) * 100).toFixed(2)
 
+  const handleDrawerToggle = () => {
+    setDrawerOpen(open => {
+      const newOpen = !open;
+      if (!newOpen) setWobbleTrigger(t => t + 1);
+      return newOpen;
+    });
+  }
+
   return (
     <div className="app-wrapper">
 
       <Drawer open={drawerOpen} setOpen={setDrawerOpen} >
         <button
+          onClick={handleDrawerToggle}
           style={{
             background: themeColors.bgColor,
             cursor: 'pointer',
@@ -45,10 +54,21 @@ function App() {
             borderRadius: '5px',
             padding: '0px 0px',
           }}
-          onClick={() => setDrawerOpen(open => !open)}
         >
           <img src="src/assets/icon_drawer.png" alt="null" />
         </button>
+
+        <img
+          src={'src/assets/arrow.png'}
+          alt="arrow"
+          style={{
+            width: '100px',
+            position: 'absolute',
+            zIndex: 4,
+            marginTop: '-10px',
+          }}
+        />
+
         <div
           className="mask-half"
           style={{
@@ -62,7 +82,7 @@ function App() {
             zIndex: 3,
           }}
         >
-          <WobblyClock targetAngle={dayPercent * 3.6} />
+          <WobblyClock targetAngle={dayPercent * 3.6 - 90} wobbleTrigger={wobbleTrigger} />
         </div>
       </Drawer>
 

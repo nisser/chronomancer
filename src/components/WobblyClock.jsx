@@ -1,15 +1,15 @@
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { useEffect } from 'react';
-import clockface from '../assets/clockface.png';
+import clockface from '../assets/ex_clockface.png';
 
-function WobblyClock({ targetAngle }) {
+function WobblyClock({ targetAngle, wobbleTrigger }) {
   // raw motion value (instantly set)
   const angle = useMotionValue(0);
 
   // spring that wobbles toward angle
   const animatedAngle = useSpring(angle, {
-    stiffness: 80, // increase = snappier
-    damping: 4,     // lower = more wobble
+    stiffness: 100, // increase = snappier
+    damping: 5,     // lower = more wobble
   });
 
   // when targetAngle changes, update the motion value
@@ -17,15 +17,22 @@ function WobblyClock({ targetAngle }) {
     angle.set(targetAngle);
   }, [targetAngle]);
 
+  // Wobble when drawer opens
+  useEffect(() => {
+    // Add a quick "kick" to the angle for wobble
+    angle.set(targetAngle + 30);
+    setTimeout(() => angle.set(targetAngle), 100);
+  }, [wobbleTrigger]);
+
   return (
     <motion.div
       style={{
-        width: '380px',
-        height: '380px',
+        width: '400px',
+        height: '400px',
         backgroundImage: `url(${clockface})`,
         backgroundSize: 'cover',
         rotate: animatedAngle,
-        marginTop: '200px',
+        marginTop: '180px',
         zIndex: 3,
       }}
     />
