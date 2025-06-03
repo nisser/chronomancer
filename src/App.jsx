@@ -5,6 +5,16 @@ import WobblyClock from './components/WobblyClock'
 import Drawer from './components/Drawer'
 import BottomDrawer from './components/BottomDrawer'
 import FortunesData from './assets/fortunes.json'
+import { useRef } from 'react';
+
+// Helper hook to get previous value
+function usePrevious(value) {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value;
+  }, [value]);
+  return ref.current;
+}
 
 function App() {
   // Get theme colors from CSS variables
@@ -30,13 +40,14 @@ function App() {
     return () => clearInterval(interval)
   }, [])
 
+  // On mount
   useEffect(() => {
-    // Pick a random fortune on mount
     if (FortunesData && FortunesData.length > 0) {
       const idx = Math.floor(Math.random() * FortunesData.length);
-      setRandomFortune(FortunesData[idx]);
+      setRandomFortune(FortunesData[idx].message); // <-- use .message
     }
   }, [])
+
   // Calculate day completion percentage
   const secondsSinceMidnight = time.getHours() * 3600 + time.getMinutes() * 60 + time.getSeconds()
   const dayPercent = ((secondsSinceMidnight / 86400) * 100).toFixed(2)
@@ -49,15 +60,17 @@ function App() {
     });
   }
 
+  const prevBottomDrawerOpen = usePrevious(bottomDrawerOpen);
+
   useEffect(() => {
-    if (!bottomDrawerOpen) {
+    if (prevBottomDrawerOpen === undefined) return; // skip first render
+    if (prevBottomDrawerOpen && !bottomDrawerOpen) {
       if (FortunesData && FortunesData.length > 0) {
         const idx = Math.floor(Math.random() * FortunesData.length);
         setRandomFortune(FortunesData[idx].message);
       }
     }
-    // Only runs when bottomDrawerOpen becomes true
-  }, [bottomDrawerOpen]);
+  }, [bottomDrawerOpen, prevBottomDrawerOpen]);
 
   return (
     <div className="app-wrapper">
