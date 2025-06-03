@@ -3,6 +3,8 @@ import './styles/App.css'
 import Clock from './components/Clock'
 import WobblyClock from './components/WobblyClock'
 import Drawer from './components/Drawer'
+import BottomDrawer from './components/BottomDrawer'
+import FortunesData from './assets/fortunes.json'
 
 function App() {
   // Get theme colors from CSS variables
@@ -17,7 +19,9 @@ function App() {
 
   const [time, setTime] = useState(new Date())
   const [drawerOpen, setDrawerOpen] = useState(true)
+  const [bottomDrawerOpen, setBottomDrawerOpen] = useState(true)
   const [wobbleTrigger, setWobbleTrigger] = useState(0)
+  const [randomFortune, setRandomFortune] = useState('')
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,6 +30,13 @@ function App() {
     return () => clearInterval(interval)
   }, [])
 
+  useEffect(() => {
+    // Pick a random fortune on mount
+    if (FortunesData && FortunesData.length > 0) {
+      const idx = Math.floor(Math.random() * FortunesData.length);
+      setRandomFortune(FortunesData[idx]);
+    }
+  }, [])
   // Calculate day completion percentage
   const secondsSinceMidnight = time.getHours() * 3600 + time.getMinutes() * 60 + time.getSeconds()
   const dayPercent = ((secondsSinceMidnight / 86400) * 100).toFixed(2)
@@ -37,6 +48,16 @@ function App() {
       return newOpen;
     });
   }
+
+  useEffect(() => {
+    if (!bottomDrawerOpen) {
+      if (FortunesData && FortunesData.length > 0) {
+        const idx = Math.floor(Math.random() * FortunesData.length);
+        setRandomFortune(FortunesData[idx].message);
+      }
+    }
+    // Only runs when bottomDrawerOpen becomes true
+  }, [bottomDrawerOpen]);
 
   return (
     <div className="app-wrapper">
@@ -62,7 +83,7 @@ function App() {
           src={'src/assets/arrow.png'}
           alt="arrow"
           style={{
-            width: '100px',
+            width: '50px',
             position: 'absolute',
             zIndex: 4,
             marginTop: '-10px',
@@ -82,7 +103,7 @@ function App() {
             zIndex: 3,
           }}
         >
-          <WobblyClock targetAngle={dayPercent * 3.6 - 90} wobbleTrigger={wobbleTrigger} />
+          <WobblyClock targetAngle={-dayPercent * 3.6 - 180} wobbleTrigger={wobbleTrigger} />
         </div>
       </Drawer>
 
@@ -99,7 +120,7 @@ function App() {
           position: 'relative',
         }}
       >
-        <div style={{ padding: '50px 50px' }}>
+        <div style={{ padding: '60px 60px' }}>
           <Clock
             hours={time.getHours()}
             minutes={time.getMinutes()}
@@ -112,22 +133,26 @@ function App() {
           />
         </div>
       </div>
-      <button
-        style={{
-          margin: '0px 0px',
-          background: themeColors.bgColor,
-          color: themeColors.bgColor,
-          border: 'none',
-          borderRadius: '0px',
-          padding: '0px 0px',
-          cursor: 'pointer',
-          zIndex: 5,
-          position: 'relative',
-        }}
-        onClick={() => setDrawerOpen(open => !open)}
-      >
-        <img src="src/assets/icon_drawer.png" alt="null" />
-      </button>
+      <BottomDrawer open={bottomDrawerOpen} setOpen={setBottomDrawerOpen} >
+        <button
+          style={{
+            background: themeColors.bgColor,
+            cursor: 'pointer',
+            border: 'none',
+            zIndex: 3,
+            position: 'absolute',
+            marginTop: '208px',
+            borderRadius: '5px',
+            padding: '0px 0px',
+          }}
+          onClick={() => setBottomDrawerOpen(open => !open)}
+        >
+          <img src="src/assets/icon_drawer.png" alt="null" />
+        </button>
+        <div style={{ marginTop: 48, color: themeColors.textColor, textAlign: 'center' }}>
+          {randomFortune}
+        </div>
+      </BottomDrawer>
     </div>
   )
 }

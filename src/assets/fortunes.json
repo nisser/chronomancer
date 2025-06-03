@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. Fortune favors the mildly confused."
+  },
+  {
+    "id": 2,
+    "message": "It's a good time to consider taking a nap \u2014 or maybe not. Vibe with caution."
+  },
+  {
+    "id": 3,
+    "message": "Today you might make bold choices in cereal. Time is fake today."
+  },
+  {
+    "id": 4,
+    "message": "Trust no left sock. Also, Your fridge light will flicker ominously."
+  },
+  {
+    "id": 5,
+    "message": "Your fridge light will flicker ominously. Today is your day. Unless it's someone else's."
+  },
+  {
+    "id": 6,
+    "message": "Today you might whistle at the wrong moment. Blink dramatically during arguments."
+  },
+  {
+    "id": 7,
+    "message": "It's a good time to challenge a duck to a staring contest \u2014 or maybe not. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 8,
+    "message": "Today you might consider taking a nap. Blink dramatically during arguments."
+  },
+  {
+    "id": 9,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. Fortune favors the mildly confused."
+  },
+  {
+    "id": 10,
+    "message": "Today you might make bold choices in cereal. Respect the cheese."
+  },
+  {
+    "id": 11,
+    "message": "It's a good time to whistle at the wrong moment \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 12,
+    "message": "It's a good time to avoid eye contact with squirrels \u2014 or maybe not. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 13,
+    "message": "Today you might avoid eye contact with squirrels. Wear the hat. Just do it."
+  },
+  {
+    "id": 14,
+    "message": "An inanimate object will challenge your authority. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 15,
+    "message": "Respect the cheese. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 16,
+    "message": "An inanimate object will challenge your authority. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 17,
+    "message": "Wear the hat. Just do it. Also, Your fridge light will flicker ominously."
+  },
+  {
+    "id": 18,
+    "message": "Today you might whistle at the wrong moment. Trust no left sock."
+  },
+  {
+    "id": 19,
+    "message": "Avoid any food that jiggles. Also, A bird might land near you \u2014 don\u2019t panic."
+  },
+  {
+    "id": 20,
+    "message": "You may receive a text that alters your mood for 47 seconds. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 21,
+    "message": "It's a good time to accidentally summon minor chaos \u2014 or maybe not. Power comes from naps and pasta."
+  },
+  {
+    "id": 22,
+    "message": "Something small will feel like a big win. Embrace it. Today is your day. Unless it's someone else's."
+  },
+  {
+    "id": 23,
+    "message": "Avoid any food that jiggles. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 24,
+    "message": "An inanimate object will challenge your authority. Today is your day. Unless it's someone else's."
+  },
+  {
+    "id": 25,
+    "message": "Respect the cheese. Also, You'll trip over nothing and blame gravity."
+  },
+  {
+    "id": 26,
+    "message": "Something small will feel like a big win. Embrace it. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 27,
+    "message": "Something small will feel like a big win. Embrace it. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 28,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. The stars are watching. Be weird responsibly."
+  },
+  {
+    "id": 29,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 30,
+    "message": "You may receive a text that alters your mood for 47 seconds. Vibe with caution."
+  },
+  {
+    "id": 31,
+    "message": "Time is fake today. Also, You may receive a text that alters your mood for 47 seconds."
+  },
+  {
+    "id": 32,
+    "message": "You may receive a text that alters your mood for 47 seconds. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 33,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. Power comes from naps and pasta."
+  },
+  {
+    "id": 34,
+    "message": "It's a good time to avoid eye contact with squirrels \u2014 or maybe not. Power comes from naps and pasta."
+  },
+  {
+    "id": 35,
+    "message": "It's a good time to consider taking a nap \u2014 or maybe not. Power comes from naps and pasta."
+  },
+  {
+    "id": 36,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. Fortune favors the mildly confused."
+  },
+  {
+    "id": 37,
+    "message": "Avoid any food that jiggles. Also, An old email will resurface and haunt you."
+  },
+  {
+    "id": 38,
+    "message": "Blink dramatically during arguments. Also, You will mishear something and confidently repeat it all day."
+  },
+  {
+    "id": 39,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 40,
+    "message": "Talk to a houseplant, it might answer. Also, Something small will feel like a big win. Embrace it."
+  },
+  {
+    "id": 41,
+    "message": "It's a good time to avoid eye contact with squirrels \u2014 or maybe not. Today is your day. Unless it's someone else's."
+  },
+  {
+    "id": 42,
+    "message": "Today you might make bold choices in cereal. Say yes to the weird opportunity."
+  },
+  {
+    "id": 43,
+    "message": "You'll trip over nothing and blame gravity. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 44,
+    "message": "Talk to a houseplant, it might answer. Also, A bird might land near you \u2014 don\u2019t panic."
+  },
+  {
+    "id": 45,
+    "message": "Something small will feel like a big win. Embrace it. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 46,
+    "message": "Avoid any food that jiggles. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 47,
+    "message": "Today you might start a new hobby you'll abandon in a week. Avoid any food that jiggles."
+  },
+  {
+    "id": 48,
+    "message": "Wear the hat. Just do it. Also, You'll trip over nothing and blame gravity."
+  },
+  {
+    "id": 49,
+    "message": "It's a good time to consider taking a nap \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 50,
+    "message": "Trust no left sock. Also, Something small will feel like a big win. Embrace it."
+  },
+  {
+    "id": 51,
+    "message": "Your fridge light will flicker ominously. Power comes from naps and pasta."
+  },
+  {
+    "id": 52,
+    "message": "You may receive a text that alters your mood for 47 seconds. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 53,
+    "message": "An inanimate object will challenge your authority. Fortune favors the mildly confused."
+  },
+  {
+    "id": 54,
+    "message": "Today you might accidentally summon minor chaos. Talk to a houseplant, it might answer."
+  },
+  {
+    "id": 55,
+    "message": "A bird might land near you \u2014 don\u2019t panic. Don't trust Tuesdays."
+  },
+  {
+    "id": 56,
+    "message": "You will mishear something and confidently repeat it all day. Don't trust Tuesdays."
+  },
+  {
+    "id": 57,
+    "message": "Today you might accidentally summon minor chaos. Wear the hat. Just do it."
+  },
+  {
+    "id": 58,
+    "message": "Today you might accidentally summon minor chaos. Avoid any food that jiggles."
+  },
+  {
+    "id": 59,
+    "message": "You'll trip over nothing and blame gravity. Fortune favors the mildly confused."
+  },
+  {
+    "id": 60,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. Fortune favors the mildly confused."
+  },
+  {
+    "id": 61,
+    "message": "It's a good time to make bold choices in cereal \u2014 or maybe not. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 62,
+    "message": "It's a good time to whistle at the wrong moment \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 63,
+    "message": "Avoid any food that jiggles. Also, You'll trip over nothing and blame gravity."
+  },
+  {
+    "id": 64,
+    "message": "It's a good time to start a new hobby you'll abandon in a week \u2014 or maybe not. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 65,
+    "message": "Expect chaos from your Wi-Fi connection. Don't trust Tuesdays."
+  },
+  {
+    "id": 66,
+    "message": "Respect the cheese. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 67,
+    "message": "Look busy around 3 PM. Also, You will mishear something and confidently repeat it all day."
+  },
+  {
+    "id": 68,
+    "message": "An old email will resurface and haunt you. Today is your day. Unless it's someone else's."
+  },
+  {
+    "id": 69,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 70,
+    "message": "Back up your files and your opinions. Also, An inanimate object will challenge your authority."
+  },
+  {
+    "id": 71,
+    "message": "Today you might consider taking a nap. Wear the hat. Just do it."
+  },
+  {
+    "id": 72,
+    "message": "Back up your files and your opinions. Also, Your fridge light will flicker ominously."
+  },
+  {
+    "id": 73,
+    "message": "Today you might whistle at the wrong moment. Say yes to the weird opportunity."
+  },
+  {
+    "id": 74,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. Vibe with caution."
+  },
+  {
+    "id": 75,
+    "message": "Today you might whistle at the wrong moment. Time is fake today."
+  },
+  {
+    "id": 76,
+    "message": "Say yes to the weird opportunity. Also, You'll trip over nothing and blame gravity."
+  },
+  {
+    "id": 77,
+    "message": "An old email will resurface and haunt you. The stars are watching. Be weird responsibly."
+  },
+  {
+    "id": 78,
+    "message": "It's a good time to start a new hobby you'll abandon in a week \u2014 or maybe not. Power comes from naps and pasta."
+  },
+  {
+    "id": 79,
+    "message": "Today you might question your life decisions over coffee. Say yes to the weird opportunity."
+  },
+  {
+    "id": 80,
+    "message": "Avoid any food that jiggles. Also, You'll trip over nothing and blame gravity."
+  },
+  {
+    "id": 81,
+    "message": "Talk to a houseplant, it might answer. Also, Something small will feel like a big win. Embrace it."
+  },
+  {
+    "id": 82,
+    "message": "A bird might land near you \u2014 don\u2019t panic. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 83,
+    "message": "Expect chaos from your Wi-Fi connection. Today is your day. Unless it's someone else's."
+  },
+  {
+    "id": 84,
+    "message": "It's a good time to make bold choices in cereal \u2014 or maybe not. Don't trust Tuesdays."
+  },
+  {
+    "id": 85,
+    "message": "Today you might eat something questionable. Time is fake today."
+  },
+  {
+    "id": 86,
+    "message": "You will mishear something and confidently repeat it all day. Vibe with caution."
+  },
+  {
+    "id": 87,
+    "message": "It's a good time to challenge a duck to a staring contest \u2014 or maybe not. Fortune favors the mildly confused."
+  },
+  {
+    "id": 88,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. Fortune favors the mildly confused."
+  },
+  {
+    "id": 89,
+    "message": "Time is fake today. Also, You will mishear something and confidently repeat it all day."
+  },
+  {
+    "id": 90,
+    "message": "An old email will resurface and haunt you. Don't trust Tuesdays."
+  },
+  {
+    "id": 91,
+    "message": "Expect chaos from your Wi-Fi connection. The stars are watching. Be weird responsibly."
+  },
+  {
+    "id": 92,
+    "message": "Look busy around 3 PM. Also, Expect chaos from your Wi-Fi connection."
+  },
+  {
+    "id": 93,
+    "message": "Something small will feel like a big win. Embrace it. Fortune favors the mildly confused."
+  },
+  {
+    "id": 94,
+    "message": "Today you might eat something questionable. Blink dramatically during arguments."
+  },
+  {
+    "id": 95,
+    "message": "It's a good time to question your life decisions over coffee \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 96,
+    "message": "Back up your files and your opinions. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 97,
+    "message": "Today you might accidentally summon minor chaos. Blink dramatically during arguments."
+  },
+  {
+    "id": 98,
+    "message": "Today you might avoid eye contact with squirrels. Respect the cheese."
+  },
+  {
+    "id": 99,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 100,
+    "message": "Blink dramatically during arguments. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 101,
+    "message": "Today you might reorganize your sock drawer. Back up your files and your opinions."
+  },
+  {
+    "id": 102,
+    "message": "It's a good time to challenge a duck to a staring contest \u2014 or maybe not. Power comes from naps and pasta."
+  },
+  {
+    "id": 103,
+    "message": "It's a good time to avoid eye contact with squirrels \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 104,
+    "message": "Today you might eat something questionable. Back up your files and your opinions."
+  },
+  {
+    "id": 105,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 106,
+    "message": "Something small will feel like a big win. Embrace it. Don't trust Tuesdays."
+  },
+  {
+    "id": 107,
+    "message": "It's a good time to whistle at the wrong moment \u2014 or maybe not. Power comes from naps and pasta."
+  },
+  {
+    "id": 108,
+    "message": "It's a good time to challenge a duck to a staring contest \u2014 or maybe not. Don't trust Tuesdays."
+  },
+  {
+    "id": 109,
+    "message": "You'll trip over nothing and blame gravity. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 110,
+    "message": "It's a good time to question your life decisions over coffee \u2014 or maybe not. Power comes from naps and pasta."
+  },
+  {
+    "id": 111,
+    "message": "It's a good time to challenge a duck to a staring contest \u2014 or maybe not. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 112,
+    "message": "Today you might make bold choices in cereal. Blink dramatically during arguments."
+  },
+  {
+    "id": 113,
+    "message": "Trust no left sock. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 114,
+    "message": "A bird might land near you \u2014 don\u2019t panic. Vibe with caution."
+  },
+  {
+    "id": 115,
+    "message": "Trust no left sock. Also, An inanimate object will challenge your authority."
+  },
+  {
+    "id": 116,
+    "message": "It's a good time to question your life decisions over coffee \u2014 or maybe not. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 117,
+    "message": "You'll trip over nothing and blame gravity. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 118,
+    "message": "It's a good time to eat something questionable \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 119,
+    "message": "Talk to a houseplant, it might answer. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 120,
+    "message": "It's a good time to eat something questionable \u2014 or maybe not. The stars are watching. Be weird responsibly."
+  },
+  {
+    "id": 121,
+    "message": "Back up your files and your opinions. Also, An old email will resurface and haunt you."
+  },
+  {
+    "id": 122,
+    "message": "You will mishear something and confidently repeat it all day. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 123,
+    "message": "Today you might eat something questionable. Wear the hat. Just do it."
+  },
+  {
+    "id": 124,
+    "message": "Today you might make bold choices in cereal. Wear the hat. Just do it."
+  },
+  {
+    "id": 125,
+    "message": "Time is fake today. Also, You'll trip over nothing and blame gravity."
+  },
+  {
+    "id": 126,
+    "message": "Say yes to the weird opportunity. Also, Your fridge light will flicker ominously."
+  },
+  {
+    "id": 127,
+    "message": "Expect chaos from your Wi-Fi connection. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 128,
+    "message": "Today you might make bold choices in cereal. Wear the hat. Just do it."
+  },
+  {
+    "id": 129,
+    "message": "Avoid any food that jiggles. Also, Something small will feel like a big win. Embrace it."
+  },
+  {
+    "id": 130,
+    "message": "You may receive a text that alters your mood for 47 seconds. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 131,
+    "message": "It's a good time to whistle at the wrong moment \u2014 or maybe not. Vibe with caution."
+  },
+  {
+    "id": 132,
+    "message": "Today you might eat something questionable. Say yes to the weird opportunity."
+  },
+  {
+    "id": 133,
+    "message": "You may receive a text that alters your mood for 47 seconds. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 134,
+    "message": "Today you might whistle at the wrong moment. Look busy around 3 PM."
+  },
+  {
+    "id": 135,
+    "message": "Today you might reorganize your sock drawer. Blink dramatically during arguments."
+  },
+  {
+    "id": 136,
+    "message": "Today you might accidentally summon minor chaos. Wear the hat. Just do it."
+  },
+  {
+    "id": 137,
+    "message": "You will mishear something and confidently repeat it all day. Power comes from naps and pasta."
+  },
+  {
+    "id": 138,
+    "message": "A bird might land near you \u2014 don\u2019t panic. The stars are watching. Be weird responsibly."
+  },
+  {
+    "id": 139,
+    "message": "Back up your files and your opinions. Also, Expect chaos from your Wi-Fi connection."
+  },
+  {
+    "id": 140,
+    "message": "Blink dramatically during arguments. Also, Something small will feel like a big win. Embrace it."
+  },
+  {
+    "id": 141,
+    "message": "Avoid any food that jiggles. Also, You may receive a text that alters your mood for 47 seconds."
+  },
+  {
+    "id": 142,
+    "message": "It's a good time to consider taking a nap \u2014 or maybe not. Vibe with caution."
+  },
+  {
+    "id": 143,
+    "message": "Avoid any food that jiggles. Also, A bird might land near you \u2014 don\u2019t panic."
+  },
+  {
+    "id": 144,
+    "message": "Blink dramatically during arguments. Also, Your fridge light will flicker ominously."
+  },
+  {
+    "id": 145,
+    "message": "Today you might start a new hobby you'll abandon in a week. Time is fake today."
+  },
+  {
+    "id": 146,
+    "message": "An inanimate object will challenge your authority. Don't trust Tuesdays."
+  },
+  {
+    "id": 147,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 148,
+    "message": "Today you might consider taking a nap. Back up your files and your opinions."
+  },
+  {
+    "id": 149,
+    "message": "It's a good time to question your life decisions over coffee \u2014 or maybe not. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 150,
+    "message": "Today you might challenge a duck to a staring contest. Trust no left sock."
+  },
+  {
+    "id": 151,
+    "message": "It's a good time to consider taking a nap \u2014 or maybe not. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 152,
+    "message": "An inanimate object will challenge your authority. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 153,
+    "message": "It's a good time to whistle at the wrong moment \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 154,
+    "message": "Today you might question your life decisions over coffee. Talk to a houseplant, it might answer."
+  },
+  {
+    "id": 155,
+    "message": "It's a good time to start a new hobby you'll abandon in a week \u2014 or maybe not. Today is your day. Unless it's someone else's."
+  },
+  {
+    "id": 156,
+    "message": "Your fridge light will flicker ominously. Don't trust Tuesdays."
+  },
+  {
+    "id": 157,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. Fortune favors the mildly confused."
+  },
+  {
+    "id": 158,
+    "message": "Today you might consider taking a nap. Look busy around 3 PM."
+  },
+  {
+    "id": 159,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. The stars are watching. Be weird responsibly."
+  },
+  {
+    "id": 160,
+    "message": "You will mishear something and confidently repeat it all day. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 161,
+    "message": "It's a good time to question your life decisions over coffee \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 162,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. Vibe with caution."
+  },
+  {
+    "id": 163,
+    "message": "Your fridge light will flicker ominously. Fortune favors the mildly confused."
+  },
+  {
+    "id": 164,
+    "message": "Blink dramatically during arguments. Also, Your fridge light will flicker ominously."
+  },
+  {
+    "id": 165,
+    "message": "You will mishear something and confidently repeat it all day. You contain multitudes and probably snacks."
+  },
+  {
+    "id": 166,
+    "message": "Today you might avoid eye contact with squirrels. Wear the hat. Just do it."
+  },
+  {
+    "id": 167,
+    "message": "Avoid any food that jiggles. Also, Expect chaos from your Wi-Fi connection."
+  },
+  {
+    "id": 168,
+    "message": "Trust no left sock. Also, Something small will feel like a big win. Embrace it."
+  },
+  {
+    "id": 169,
+    "message": "If someone intentionally put fentanyl in beer, it's attempted murder \u2014 not a party trick, not a joke."
+  },
+  {
+    "id": 170,
+    "message": "It's a good time to challenge a duck to a staring contest \u2014 or maybe not. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 171,
+    "message": "Avoid any food that jiggles. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 172,
+    "message": "Today you might eat something questionable. Wear the hat. Just do it."
+  },
+  {
+    "id": 173,
+    "message": "Today you might whistle at the wrong moment. Blink dramatically during arguments."
+  },
+  {
+    "id": 174,
+    "message": "It's a good time to consider taking a nap \u2014 or maybe not. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 175,
+    "message": "Today you might challenge a duck to a staring contest. Talk to a houseplant, it might answer."
+  },
+  {
+    "id": 176,
+    "message": "An old email will resurface and haunt you. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 177,
+    "message": "Today you might reorganize your sock drawer. Time is fake today."
+  },
+  {
+    "id": 178,
+    "message": "Respect the cheese. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 179,
+    "message": "Today you might start a new hobby you'll abandon in a week. Wear the hat. Just do it."
+  },
+  {
+    "id": 180,
+    "message": "It's a good time to reorganize your sock drawer \u2014 or maybe not. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 181,
+    "message": "Talk to a houseplant, it might answer. Also, Expect chaos from your Wi-Fi connection."
+  },
+  {
+    "id": 182,
+    "message": "Back up your files and your opinions. Also, You\u2019ll unlock a core memory while waiting for the microwave."
+  },
+  {
+    "id": 183,
+    "message": "You will mishear something and confidently repeat it all day. Mercury might be in retrograde, blame it for everything."
+  },
+  {
+    "id": 184,
+    "message": "Today you might question your life decisions over coffee. Say yes to the weird opportunity."
+  },
+  {
+    "id": 185,
+    "message": "Today you might eat something questionable. Back up your files and your opinions."
+  },
+  {
+    "id": 186,
+    "message": "Today you might consider taking a nap. Wear the hat. Just do it."
+  },
+  {
+    "id": 187,
+    "message": "An old email will resurface and haunt you. Vibe with caution."
+  },
+  {
+    "id": 188,
+    "message": "You\u2019ll unlock a core memory while waiting for the microwave. Today is your day. Unless it's someone else's."
+  },
+  {
+    "id": 189,
+    "message": "Something small will feel like a big win. Embrace it. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 190,
+    "message": "An inanimate object will challenge your authority. Fortune favors the mildly confused."
+  },
+  {
+    "id": 191,
+    "message": "You will mishear something and confidently repeat it all day. Power comes from naps and pasta."
+  },
+  {
+    "id": 192,
+    "message": "You may receive a text that alters your mood for 47 seconds. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 193,
+    "message": "Today you might challenge a duck to a staring contest. Avoid any food that jiggles."
+  },
+  {
+    "id": 194,
+    "message": "Today you might avoid eye contact with squirrels. Blink dramatically during arguments."
+  },
+  {
+    "id": 195,
+    "message": "It's a good time to start a new hobby you'll abandon in a week \u2014 or maybe not. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 196,
+    "message": "It's a good time to eat something questionable \u2014 or maybe not. Remember: socks are just foot prisons."
+  },
+  {
+    "id": 197,
+    "message": "You'll trip over nothing and blame gravity. The stars are watching. Be weird responsibly."
+  },
+  {
+    "id": 198,
+    "message": "Today you might consider taking a nap. Back up your files and your opinions."
+  },
+  {
+    "id": 199,
+    "message": "It's a good time to challenge a duck to a staring contest \u2014 or maybe not. Try not to scare the neighbors \u2014 again."
+  },
+  {
+    "id": 200,
+    "message": "Today you might question your life decisions over coffee. Respect the cheese."
+  }
+]
