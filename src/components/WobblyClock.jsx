@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { useEffect } from 'react';
-import clockface from '../assets/ex_clockface.png';
+import clockface from '../assets/clockface.png';
 
 function WobblyClock({ targetAngle, wobbleTrigger }) {
   // Raw motion value (instantly set)
