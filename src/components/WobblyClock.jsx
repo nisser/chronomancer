@@ -3,16 +3,16 @@ import { useEffect } from 'react';
 import clockface from '../assets/ex_clockface.png';
 
 function WobblyClock({ targetAngle, wobbleTrigger }) {
-  // raw motion value (instantly set)
+  // Raw motion value (instantly set)
   const angle = useMotionValue(0);
 
-  // spring that wobbles toward angle
+  // Spring that wobbles toward angle
   const animatedAngle = useSpring(angle, {
-    stiffness: 100, // increase = snappier
-    damping: 5,     // lower = more wobble
+    stiffness: 100,
+    damping: 5,
   });
 
-  // when targetAngle changes, update the motion value
+  // When targetAngle changes, update the motion value
   useEffect(() => {
     angle.set(targetAngle);
   }, [targetAngle]);

@@ -36,7 +36,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date())
-    }, 1000) // update every second for clock
+    }, 1000)
     return () => clearInterval(interval)
   }, [])
 
@@ -44,7 +44,7 @@ function App() {
   useEffect(() => {
     if (FortunesData && FortunesData.length > 0) {
       const idx = Math.floor(Math.random() * FortunesData.length);
-      setRandomFortune(FortunesData[idx].message); // <-- use .message
+      setRandomFortune(FortunesData[idx].message);
     }
   }, [])
 
@@ -63,7 +63,7 @@ function App() {
   const prevBottomDrawerOpen = usePrevious(bottomDrawerOpen);
 
   useEffect(() => {
-    if (prevBottomDrawerOpen === undefined) return; // skip first render
+    if (prevBottomDrawerOpen === undefined) return; // Skip first render
     if (prevBottomDrawerOpen && !bottomDrawerOpen) {
       if (FortunesData && FortunesData.length > 0) {
         const idx = Math.floor(Math.random() * FortunesData.length);
@@ -162,7 +162,7 @@ function App() {
         >
           <img src="src/assets/icon_drawer.png" alt="null" />
         </button>
-        <div style={{ marginTop: 48, color: themeColors.textColor, textAlign: 'center' }}>
+        <div style={{ margin: 70, color: themeColors.textColor, textAlign: 'center', fontWeight: 'bold' }}>
           {randomFortune}
         </div>
       </BottomDrawer>
