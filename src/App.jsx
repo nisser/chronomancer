@@ -6,6 +6,8 @@ import Drawer from './components/Drawer'
 import BottomDrawer from './components/BottomDrawer'
 import FortunesData from './assets/fortunes.json'
 import { useRef } from 'react';
+import arrow from './assets/arrow.png';
+import iconDrawer from './assets/icon_drawer.png';
 
 // Helper hook to get previous value
 function usePrevious(value) {
@@ -89,11 +91,11 @@ function App() {
             padding: '0px 0px',
           }}
         >
-          <img src="src/assets/icon_drawer.png" alt="null" />
+          <img src={iconDrawer} alt="iconDrawer" />
         </button>
 
         <img
-          src={'src/assets/arrow.png'}
+          src={arrow}
           alt="arrow"
           style={{
             width: '50px',
@@ -160,7 +162,7 @@ function App() {
           }}
           onClick={() => setBottomDrawerOpen(open => !open)}
         >
-          <img src="src/assets/icon_drawer.png" alt="null" />
+          <img src={iconDrawer} alt="iconDrawer" />
         </button>
         <div style={{ margin: 70, color: themeColors.textColor, textAlign: 'center', fontWeight: 'bold' }}>
           {randomFortune}
