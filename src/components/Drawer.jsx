@@ -7,7 +7,7 @@ function Drawer({ open, setOpen , children}) {
   useEffect(() => {
     animate(y, open ? 0 : -180, { type: 'spring', stiffness: 200, damping: 20 });
   }, [open, y]);
- // 180 23
+
   return (
 
       <motion.div

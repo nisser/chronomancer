@@ -51,4 +51,4 @@ This project is licensed under the MIT License.
 
 ## Author
 Matas Jovaiša
-https://github.com/nisser
+[https://github.com/nisser](https://github.com/nisser)
